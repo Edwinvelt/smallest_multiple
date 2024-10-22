@@ -4,19 +4,19 @@
 fn main() {
 
     let mut value: u128 = 1;
-    let mut num: u128 = 1;
+    let mut num: u128 = 20;
     
     loop {
         
         if value % num != 0 {
-            num = 1;
+            num = 20;
             value += 1;
             println!("{:?}", value);
         }
         else if num >= 20 {
             break;
         }
-        num += 1;
+        num -= 1;
         println!("{:?}", value);
     }
     println!("| {:?} | is evenly divisible", value);
